@@ -612,7 +612,8 @@ static void debug_help(struct fiq_debugger_state *state)
 				" pc            PC status\n"
 				" regs          Register dump\n"
 				" allregs       Extended Register dump\n"
-				" bt            Stack trace\n"
+				" bt            Stack trace\n");
+	fiq_debugger_printf(&state->output,
 				" reboot [<c>]  Reboot with command <c>\n"
 				" reset [<c>]   Hard reset with command <c>\n"
 				" irqs          Interupt status\n"
